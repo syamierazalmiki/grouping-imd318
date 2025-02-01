@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+	 <style>
+		body  
+        {
+            background-color:brown;
+        }
+        footer
+        {
+        	font-weight: bolder;
+        }
+	</style>
+</head>
+
+<body>
+	<div class="link-section">
+        <a href="index.html">Home</a>
+        <a href="category.html">Category</a>
+        <a href="popular.html">Popular</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+	<div class="container">
+		<h1>Send Us A Message</h1>
+		<p>Have a question? Want to give feedback? Don't worry we are here for you. Just leave your message and if needed we will contact you soon. Thank you.</p>
+
+		<div class="contact-box">
+			<div class="contact-left">
+				<h3>Sent your request</h3>
+				<form>
+					<div class="input-row">
+						<div class="input-group">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" required>
+						</div>
+
+						<div class="input-group">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" required>
+						</div>
+					</div>
+
+
+					<div class="input-row">
+						<div class="input-group">
+							<label for="phone">Phone</label>
+							<input type="tel" name="phone" id="phone" required>
+						</div>
+
+						<div class="input-group">
+							<label for="subject">Subject</label>
+							<select name="subject" id="subject" required>
+								<option value="select">Select an options</option>
+								<option value="general">General</option>
+								<option value="enquiry">Enquiry</option>
+								<option value="suggestion">Suggestion</option>
+								<option value="feedback">Feedback</option>
+								<option value="others">Others</option>
+							</select>
+						</div>
+					</div>
+
+						<div class="input-group">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" cols="30" rows="4" required></textarea>		
+						</div>
+
+						<p style="opacity: 100%;"><button onclick="myAlertBox()">Submit</button></p>	
+
+						<script>
+							function myAlertBox()
+						{
+							alert("Your Request Successfully Submitted!")
+						}
+						</script>
+
+				</form>
+			</div>
+			
+		
+		<div class="contact-right">
+			
+
+			<table>
+
+				<tr>
+					<h3>Address</h3>
+					<p style="text-align: left; font-size: 20px; color:black; opacity: 100%;">Foodcourt Dato' Onn Uitm, 18500 Machang, Kelantan</p>
+				</tr>
+
+				<tr>
+					<h3>Operation Hour</h3>
+					<ul>
+						<li>Sunday-Saturday: 12:00pm-11:00pm</li>
+						<li>Monday: Closed</li>
+					</ul>
+					
+				</tr>
+
+				<tr>
+					<h3>Get in Touch</h3>
+
+					<div class="social-icons">
+
+					<a href="https://www.facebook.com/p/K6-katering-100063796501615/"><i class='bx bxl-facebook-circle'></i></a>
+					<a href="https://wa.me/60189814140"><i class='bx bxl-whatsapp'></i></a>
+					<a href="https://www.tiktok.com/@k6kateringkeneyikanbakar"><i class='bx bxl-tiktok'></i></a>
+					<a href="https://www.instagram.com/k6corner/"><i class='bx bxl-instagram'></i></a>	
+
+					</div>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+</div>
+			
+	<div class="footer">
+	    <footer>
+	    	<p><b>K6 Cafe &copy2025 | All Rights Reserved</b></p>
+	    </footer>
+	</div>
+
+</body>
+</html>

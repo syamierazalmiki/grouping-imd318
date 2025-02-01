@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Popular</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+	<style>
+		body  
+        {
+            background-color:brown;
+        }
+	</style>
+
+</head>
+<body>
+
+	<div class="link-section">
+        <a href="index.html">Home</a>
+        <a href="category.html">Category</a>
+        <a href="popular.html">Popular</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="images/buttermilk1.png" alt="Nasi Ayam Buttermilk">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/chicken.png" alt="Chicken Salad">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/chickenchop.png" alt="Chicken Chop">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/grill1.png" alt="Chicken Grill">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/ayamcheese.png" alt="Ayam Cheese">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/beefburgerset.png" alt="Beef Burger">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/nasikerabu.png" alt="Nasi Kerabu">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/nugget.png" alt="Nugget">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/ww.png" alt="Spaghetti Bolognese">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/ramen.png" alt="Ramen">
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			autoplay: {
+				delay: 3000,
+			},
+			spaceBetween: 10,
+			slidesPerView: 1,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+	</script>
+
+	<br>
+	<div class="popular-page">
+		<h2>Discover Our Popular Delights</h2>
+		<h3>Indulge in the finest and most-loved dishes from our diverse menu. Our "Popular" section features the crowd favorites, carefully curated to satisfy every craving. Whether you're in the mood for a hearty meal, something light or a spicy treat, we’ve got something to make your taste buds dance with joy!</h3>
+	</div>
+	<br><br>
+
+    <div class="popular-container">
+    	<div class="food-card">
+    		<img src="images/chickenchop.png" width="60px" height="60px" alt="Chicken Chop" >
+        	<h3>Chicken Chop</h3>
+        	<p><i>Juicy chicken served with a side of crispy fries and a fresh, vibrant salad, this dish offers a delightful combination of tenderness and flavor. A perfect meal for any chicken enthusiast!</i></p>
+        <div class="price">RM10.00</div><p>
+        <div class="btn-action d-flex justify-content-center">
+            <a class="btn btn-primary py-2 px-3 cart-icon" href="https://wa.me/60189814140" onclick="showAlert()"><i class="bi bi-cart"></i></a></div>
+    	</div>
+
+    	<div class="food-card">
+	        <img src="images/grill1.png" alt="Chicken Grill">
+	        <h3>Chicken Grill</h3>
+	    	<p><i>Grilled to perfection and served with a side of vegetables and savory potatoes, this healthy yet delicious dish offers a smokey and satisfying taste that’s perfect for any meal of the day.</i></p>
+        <div class="price">RM9.00</div><p>
+        <div class="btn-action d-flex justify-content-center">
+            <a class="btn btn-primary py-2 px-3 cart-icon" href="https://wa.me/60189814140" onclick="showAlert()"><i class="bi bi-cart"></i></a></div>
+    	</div>
+
+    	<div class="food-card">
+	        <img src="images/ww.png" alt="Spaghetti Bolognese">
+	        <h3>Spaghetti Bolognese</h3>
+	    	<p><i>Al dente pasta is smothered in a rich, slow-cooked tomato sauce with minced beef, garlic, and a medley of herbs, creating a savory and satisfying dish that’s both hearty and full of flavor.</i></p>
+        <div class="price">RM8.00</div><p>
+        <div class="btn-action d-flex justify-content-center">
+            <a class="btn btn-primary py-2 px-3 cart-icon" href="https://wa.me/60189814140" onclick="showAlert()"><i class="bi bi-cart"></i></a></div>
+    	</div>
+
+    	<div class="food-card">
+	        <img src="images/beefburgerset.png" alt="Beef Burger Set">
+	        <h3>Beef Burger Set</h3>
+	    	<p><i>Perfectly toasted bun packed with a juicy tender beef patty. Accompanied by crispy golden fries and carbonated drink, this hearty meal is a winner for burger lovers.</i></p>
+        <div class="price">RM10.00</div><p>
+        <div class="btn-action d-flex justify-content-center">
+            <a class="btn btn-primary py-2 px-3 cart-icon" href="https://wa.me/60189814140" onclick="showAlert()"><i class="bi bi-cart"></i></a></div>
+    	</div>
+
+    	<div class="food-card">
+	        <img src="images/nasiayambuttermilk.png" alt="Nasi Ayam Buttermilk">
+	        <h3>Nasi Ayam Buttermilk</h3>
+	    	<p><i>Golden-fried chicken fillets drenched in a velvety buttermilk sauce, paired with steamed rice and a refreshing side salad. Every bite offers a satisfying balance of savory and creamy flavors.</i></p>
+        <div class="price">RM6.00</div><p>
+        <div class="btn-action d-flex justify-content-center">
+            <a class="btn btn-primary py-2 px-3 cart-icon" href="https://wa.me/60189814140" onclick="showAlert()"><i class="bi bi-cart"></i></a></div>
+    	</div>
+
+    	<div class="food-card">
+	        <img src="images/ramen.png" alt="Ramen">
+	        <h3>Ramen Korean Chicken</h3>
+	    	<p><i>Steamy bowl of chewy noodles and tender chicken coated in spicy-sweet Korean spices.This dish is a spicy and satisfying treat that brings warmth and comfort with every spoonful.</i></p>
+        <div class="price">RM10.00</div><p>
+        <div class="btn-action d-flex justify-content-center">
+            <a class="btn btn-primary py-2 px-3 cart-icon" href="https://wa.me/60189814140" onclick="showAlert()"><i class="bi bi-cart"></i></a></div>
+    	</div>
+	</div>
+
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const cartIcons = document.querySelectorAll(".cart-icon");
+
+    cartIcons.forEach(function(cartIcon) {
+        cartIcon.addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            alert("Order via WhatsApp now!");
+            
+            window.location.href = cartIcon.href;
+	        });
+	    });
+	});
+
+	</script>
+
+	<br>
+
+    <div class="footer">
+	    <footer>
+	    	<p><b>K6 Cafe &copy2025 | All Rights Reserved</b></p>
+	    </footer>
+	</div>
+
+</body>
+</html>
